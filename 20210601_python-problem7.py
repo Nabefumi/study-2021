@@ -28,7 +28,7 @@ def findNum(num):
                 numbers.append(j)
         result[str(i)] = numbers
 
-    for key in result:
+    for key in sorted(result):
         print(key,":",result[key])
 
 findNum(20)
