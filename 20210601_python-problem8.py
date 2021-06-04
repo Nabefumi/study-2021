@@ -5,14 +5,15 @@ The function should return the number that is repeated once and return it
 
 '''
 
-def returnDuplicateOnce(numbers:list):
+def returnDuplicateOnce(numbers):
+    
     for i in numbers:
 
-        if(numbers.count(i) == 2):
-            return i
+        if numbers.count(i) == 2:
             return None
+        return i
   
 def main():
-    numbers = [1,1,1,24,24,6,3,6,3,6,3]
+    numbers = [1,24,24,6,3,6,3,6,3]
     print(returnDuplicateOnce(numbers))
 main()
