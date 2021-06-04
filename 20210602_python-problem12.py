@@ -7,14 +7,14 @@ which are divisible to both 3 and 5.
 '''
 
 def  printSubLists(A, B):
-    
-    print("Desired numbers between "+str(A)+" and "+str(B)+", both not included")
+    values = []
     for i in range(A+1, B):
         if i % 3 == 0 and i % 5 == 0:
-            print(i)
+            values.append(i)
+    return values
             
 def main():
     
-    printSubLists(15, 90)
+    print(printSubLists(15, 90))
     
 main()
